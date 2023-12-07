@@ -1,4 +1,8 @@
+"use client"
+
+
 import "./globals.css"
+import Link from "next/link"
 
 export default function Rootlayout({ children }) {
   return (
@@ -8,10 +12,13 @@ export default function Rootlayout({ children }) {
           <nav>
             <ul>
               <li>
-                <a href="/">Forside</a>
+                <Link href="/">Forside</Link>
               </li>
               <li>
-                <a href="/settings">Indstillinger</a>
+                <Link href="/settings">Indstillinger</Link>
+              </li>
+              <li>
+                <Link href="/counter">Counter</Link>
               </li>
             </ul>
           </nav>
